@@ -52,5 +52,7 @@ namespace Tyuiu.TretyakovDV.Sprint6.Task0.V18﻿
         {
             MessageBox.Show("Таск 0 выполнил студент группы ПКТб-23-1 Третьяков Денис Викторович", "Сообщение");
         }
+
+        
     }
 }
