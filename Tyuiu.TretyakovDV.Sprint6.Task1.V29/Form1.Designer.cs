@@ -31,20 +31,20 @@ namespace Tyuiu.TretyakovDV.Sprint6.Task1.V29
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.groupBoxTask_TDV = new System.Windows.Forms.GroupBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBoxResult_TDV = new System.Windows.Forms.GroupBox();
+            this.textBoxResult_TDV = new System.Windows.Forms.TextBox();
             this.groupBoxDataInput = new System.Windows.Forms.GroupBox();
+            this.textBoxStopStep_TDV = new System.Windows.Forms.TextBox();
+            this.textBoxStartStep_TDV = new System.Windows.Forms.TextBox();
+            this.textBoxStopStepText_TDV = new System.Windows.Forms.TextBox();
+            this.textBoxStartStepText_TDV = new System.Windows.Forms.TextBox();
             this.buttonHelp_TDV = new System.Windows.Forms.Button();
             this.buttonClick_TDV = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.textBoxStartStepText_TDV = new System.Windows.Forms.TextBox();
-            this.textBoxStopStepText_TDV = new System.Windows.Forms.TextBox();
-            this.textBoxStartStep_TDV = new System.Windows.Forms.TextBox();
-            this.textBoxStopStep_TDV = new System.Windows.Forms.TextBox();
-            this.textBoxResult_TDV = new System.Windows.Forms.TextBox();
             this.groupBoxTask_TDV.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBoxResult_TDV.SuspendLayout();
             this.groupBoxDataInput.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBoxTask_TDV
@@ -59,6 +59,16 @@ namespace Tyuiu.TretyakovDV.Sprint6.Task1.V29
             this.groupBoxTask_TDV.TabStop = false;
             this.groupBoxTask_TDV.Text = "Условие";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.White;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(7, 20);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(643, 306);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // groupBoxResult_TDV
             // 
             this.groupBoxResult_TDV.Controls.Add(this.textBoxResult_TDV);
@@ -69,6 +79,18 @@ namespace Tyuiu.TretyakovDV.Sprint6.Task1.V29
             this.groupBoxResult_TDV.TabIndex = 1;
             this.groupBoxResult_TDV.TabStop = false;
             this.groupBoxResult_TDV.Text = "Вывод данных";
+            // 
+            // textBoxResult_TDV
+            // 
+            this.textBoxResult_TDV.BackColor = System.Drawing.Color.White;
+            this.textBoxResult_TDV.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBoxResult_TDV.Location = new System.Drawing.Point(6, 20);
+            this.textBoxResult_TDV.Multiline = true;
+            this.textBoxResult_TDV.Name = "textBoxResult_TDV";
+            this.textBoxResult_TDV.ReadOnly = true;
+            this.textBoxResult_TDV.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.textBoxResult_TDV.Size = new System.Drawing.Size(285, 399);
+            this.textBoxResult_TDV.TabIndex = 0;
             // 
             // groupBoxDataInput
             // 
@@ -84,6 +106,44 @@ namespace Tyuiu.TretyakovDV.Sprint6.Task1.V29
             this.groupBoxDataInput.TabIndex = 0;
             this.groupBoxDataInput.TabStop = false;
             this.groupBoxDataInput.Text = "Ввод данных";
+            // 
+            // textBoxStopStep_TDV
+            // 
+            this.textBoxStopStep_TDV.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxStopStep_TDV.Location = new System.Drawing.Point(194, 46);
+            this.textBoxStopStep_TDV.Name = "textBoxStopStep_TDV";
+            this.textBoxStopStep_TDV.Size = new System.Drawing.Size(180, 26);
+            this.textBoxStopStep_TDV.TabIndex = 3;
+            // 
+            // textBoxStartStep_TDV
+            // 
+            this.textBoxStartStep_TDV.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxStartStep_TDV.Location = new System.Drawing.Point(7, 46);
+            this.textBoxStartStep_TDV.Name = "textBoxStartStep_TDV";
+            this.textBoxStartStep_TDV.Size = new System.Drawing.Size(180, 26);
+            this.textBoxStartStep_TDV.TabIndex = 2;
+            // 
+            // textBoxStopStepText_TDV
+            // 
+            this.textBoxStopStepText_TDV.BackColor = System.Drawing.SystemColors.Menu;
+            this.textBoxStopStepText_TDV.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxStopStepText_TDV.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBoxStopStepText_TDV.Location = new System.Drawing.Point(194, 20);
+            this.textBoxStopStepText_TDV.Name = "textBoxStopStepText_TDV";
+            this.textBoxStopStepText_TDV.Size = new System.Drawing.Size(100, 19);
+            this.textBoxStopStepText_TDV.TabIndex = 1;
+            this.textBoxStopStepText_TDV.Text = "Конец шага:";
+            // 
+            // textBoxStartStepText_TDV
+            // 
+            this.textBoxStartStepText_TDV.BackColor = System.Drawing.SystemColors.Menu;
+            this.textBoxStartStepText_TDV.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxStartStepText_TDV.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBoxStartStepText_TDV.Location = new System.Drawing.Point(7, 20);
+            this.textBoxStartStepText_TDV.Name = "textBoxStartStepText_TDV";
+            this.textBoxStartStepText_TDV.Size = new System.Drawing.Size(100, 19);
+            this.textBoxStartStepText_TDV.TabIndex = 0;
+            this.textBoxStartStepText_TDV.Text = "Старт шага:";
             // 
             // buttonHelp_TDV
             // 
@@ -111,66 +171,6 @@ namespace Tyuiu.TretyakovDV.Sprint6.Task1.V29
             this.buttonClick_TDV.UseVisualStyleBackColor = false;
             this.buttonClick_TDV.Click += new System.EventHandler(this.buttonClick_TDV_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.White;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(7, 20);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(643, 306);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // textBoxStartStepText_TDV
-            // 
-            this.textBoxStartStepText_TDV.BackColor = System.Drawing.SystemColors.Menu;
-            this.textBoxStartStepText_TDV.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxStartStepText_TDV.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBoxStartStepText_TDV.Location = new System.Drawing.Point(7, 20);
-            this.textBoxStartStepText_TDV.Name = "textBoxStartStepText_TDV";
-            this.textBoxStartStepText_TDV.Size = new System.Drawing.Size(100, 19);
-            this.textBoxStartStepText_TDV.TabIndex = 0;
-            this.textBoxStartStepText_TDV.Text = "Старт шага:";
-            // 
-            // textBoxStopStepText_TDV
-            // 
-            this.textBoxStopStepText_TDV.BackColor = System.Drawing.SystemColors.Menu;
-            this.textBoxStopStepText_TDV.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxStopStepText_TDV.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBoxStopStepText_TDV.Location = new System.Drawing.Point(194, 20);
-            this.textBoxStopStepText_TDV.Name = "textBoxStopStepText_TDV";
-            this.textBoxStopStepText_TDV.Size = new System.Drawing.Size(100, 19);
-            this.textBoxStopStepText_TDV.TabIndex = 1;
-            this.textBoxStopStepText_TDV.Text = "Конец шага:";
-            // 
-            // textBoxStartStep_TDV
-            // 
-            this.textBoxStartStep_TDV.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxStartStep_TDV.Location = new System.Drawing.Point(7, 46);
-            this.textBoxStartStep_TDV.Name = "textBoxStartStep_TDV";
-            this.textBoxStartStep_TDV.Size = new System.Drawing.Size(180, 26);
-            this.textBoxStartStep_TDV.TabIndex = 2;
-            // 
-            // textBoxStopStep_TDV
-            // 
-            this.textBoxStopStep_TDV.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxStopStep_TDV.Location = new System.Drawing.Point(194, 46);
-            this.textBoxStopStep_TDV.Name = "textBoxStopStep_TDV";
-            this.textBoxStopStep_TDV.Size = new System.Drawing.Size(180, 26);
-            this.textBoxStopStep_TDV.TabIndex = 3;
-            // 
-            // textBoxResult_TDV
-            // 
-            this.textBoxResult_TDV.BackColor = System.Drawing.Color.White;
-            this.textBoxResult_TDV.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBoxResult_TDV.Location = new System.Drawing.Point(6, 20);
-            this.textBoxResult_TDV.Multiline = true;
-            this.textBoxResult_TDV.Name = "textBoxResult_TDV";
-            this.textBoxResult_TDV.ReadOnly = true;
-            this.textBoxResult_TDV.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBoxResult_TDV.Size = new System.Drawing.Size(285, 399);
-            this.textBoxResult_TDV.TabIndex = 0;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -184,13 +184,13 @@ namespace Tyuiu.TretyakovDV.Sprint6.Task1.V29
             this.Controls.Add(this.groupBoxTask_TDV);
             this.MaximizeBox = false;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Спринт 6 | Таск 1 | Вариант 29 | Третьяков Д. В.";
             this.groupBoxTask_TDV.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBoxResult_TDV.ResumeLayout(false);
             this.groupBoxResult_TDV.PerformLayout();
             this.groupBoxDataInput.ResumeLayout(false);
             this.groupBoxDataInput.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
