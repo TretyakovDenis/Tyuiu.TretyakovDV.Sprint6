@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Tyuiu.TretyakovDV.Sprint4.Task2.V4.Lib;
+using Tyuiu.TretyakovDV.Sprint6.Task2.V4.Lib;
 
 namespace Tyuiu.TretyakovDV.Sprint6.Task2.V4
 {
