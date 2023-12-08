@@ -3,17 +3,18 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Tyuiu.TretyakovDV.Sprint6.Task2.V4.Lib;
+using Tyuiu.TretyakovDV.Sprint6.Task4.V6.Lib;
 
-namespace Tyuiu.TretyakovDV.Sprint6.Task2.V4
+namespace Tyuiu.TretyakovDV.Sprint6.Task4.V6
 {
-    public partial class Form1 : Form
+    public partial class FormMain : Form
     {
-        public Form1()
+        public FormMain()
         {
             InitializeComponent();
         }
@@ -36,14 +37,15 @@ namespace Tyuiu.TretyakovDV.Sprint6.Task2.V4
 
                 valueArray = ds.GetMassFunction(startStep, stopStep);
 
-                this.chartFunction_TDV.Titles.Add("График функции");
                 this.chartFunction_TDV.ChartAreas[0].AxisX.Title = "Ось X";
                 this.chartFunction_TDV.ChartAreas[0].AxisY.Title = "Ось Y";
 
+                textBoxResult_TDV.Text = "";
+
                 for (int i = 0; i <= len - 1; i++)
                 {
-                    this.dataGridViewFunction_TDV.Rows.Add(Convert.ToString(startStep), Convert.ToString(valueArray[i]));
                     this.chartFunction_TDV.Series[0].Points.AddXY(startStep, valueArray[i]);
+                    textBoxResult_TDV.AppendText(valueArray[i] + Environment.NewLine);
                     startStep++;
                 }
             }
@@ -55,22 +57,30 @@ namespace Tyuiu.TretyakovDV.Sprint6.Task2.V4
 
         private void buttonHelp_TDV_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Таск 2 выполнил студент группы ПКТб-23-1 Третьяков Денис Викторович", "Сообщение");
+            MessageBox.Show("Таск 4 выполнил студент группы ПКТб-23-1 Третьяков Денис Викторович", "Сообщение");
         }
 
-        private void buttonClick_TDV_MouseEnter(object sender, EventArgs e)
+        private void buttonSave_TDV_Click(object sender, EventArgs e)
         {
-            buttonClick_TDV.BackColor = Color.Red;
-        }
+            try
+            {
+                string path = $@"{ Directory.GetCurrentDirectory()}/OutPutFileTask4V6.txt";
+                File.WriteAllText(path, textBoxResult_TDV.Text);
 
-        private void buttonClick_TDV_MouseDown(object sender, MouseEventArgs e)
-        {
-            buttonClick_TDV.BackColor = Color.Green;
-        }
+                DialogResult dialogResult = MessageBox.Show("Файл " + path + " сохранен успешно!\n Открыть его в блокноте?", "Сообщение", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
 
-        private void buttonClick_TDV_MouseLeave(object sender, EventArgs e)
-        {
-            buttonClick_TDV.BackColor = Color.Blue;
+                if (dialogResult == DialogResult.Yes)
+                {
+                    System.Diagnostics.Process txt = new System.Diagnostics.Process();
+                    txt.StartInfo.FileName = "notepad.exe";
+                    txt.StartInfo.Arguments = path;
+                    txt.Start();
+                }
+            }
+            catch
+            {
+                MessageBox.Show("Сбой при сохранении файла", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

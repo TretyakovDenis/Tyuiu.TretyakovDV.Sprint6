@@ -1,7 +1,7 @@
 ﻿
 namespace Tyuiu.TretyakovDV.Sprint6.Task1.V29
 {
-    partial class Form1
+    partial class FormMain
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace Tyuiu.TretyakovDV.Sprint6.Task1.V29
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.groupBoxTask_TDV = new System.Windows.Forms.GroupBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBoxResult_TDV = new System.Windows.Forms.GroupBox();
