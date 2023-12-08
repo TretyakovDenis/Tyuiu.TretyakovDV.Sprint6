@@ -154,7 +154,7 @@ namespace Tyuiu.TretyakovDV.Sprint6.Task2.V4
             this.Controls.Add(this.groupBoxResult_TDV);
             this.Controls.Add(this.groupBoxTask_TDV);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Спринт 6 | Таск 3 | Вариант 22 | Третьяков Д. В.";
             this.Load += new System.EventHandler(this.FormMain_Load);
             this.groupBoxTask_TDV.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMatrix_TDV)).EndInit();
