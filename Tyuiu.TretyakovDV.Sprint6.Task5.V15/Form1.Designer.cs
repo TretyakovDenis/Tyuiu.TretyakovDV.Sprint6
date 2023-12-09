@@ -1,7 +1,7 @@
 ﻿
 namespace Tyuiu.TretyakovDV.Sprint6.Task5.V15
 {
-    partial class Form1
+    partial class FormMain
     {
         /// <summary>
         /// Required designer variable.
@@ -32,7 +32,7 @@ namespace Tyuiu.TretyakovDV.Sprint6.Task5.V15
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.panelTop_TDV = new System.Windows.Forms.Panel();
             this.panelLeft_TDV = new System.Windows.Forms.Panel();
             this.panelFill_TDV = new System.Windows.Forms.Panel();
@@ -201,7 +201,7 @@ namespace Tyuiu.TretyakovDV.Sprint6.Task5.V15
             this.textBoxData_TDV.TabIndex = 0;
             this.textBoxData_TDV.Text = resources.GetString("textBoxData_TDV.Text");
             // 
-            // Form1
+            // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -209,7 +209,7 @@ namespace Tyuiu.TretyakovDV.Sprint6.Task5.V15
             this.Controls.Add(this.panelFill_TDV);
             this.Controls.Add(this.panelLeft_TDV);
             this.Controls.Add(this.panelTop_TDV);
-            this.Name = "Form1";
+            this.Name = "FormMain";
             this.Text = "Спринт 6 | Таск 5 | Вариант 15 | Третьяков Д. В.";
             this.panelTop_TDV.ResumeLayout(false);
             this.panelLeft_TDV.ResumeLayout(false);

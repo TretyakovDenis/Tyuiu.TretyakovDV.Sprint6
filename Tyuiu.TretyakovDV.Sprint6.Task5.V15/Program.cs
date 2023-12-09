@@ -16,7 +16,7 @@ namespace Tyuiu.TretyakovDV.Sprint6.Task5.V15
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new FormMain());
         }
     }
 }

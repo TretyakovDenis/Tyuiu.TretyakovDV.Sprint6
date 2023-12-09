@@ -12,9 +12,9 @@ using System.IO;
 
 namespace Tyuiu.TretyakovDV.Sprint6.Task5.V15
 {
-    public partial class Form1 : Form
+    public partial class FormMain : Form
     {
-        public Form1()
+        public FormMain()
         {
             InitializeComponent();
         }
