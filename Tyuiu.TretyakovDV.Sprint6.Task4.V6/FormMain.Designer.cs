@@ -46,21 +46,21 @@ namespace Tyuiu.TretyakovDV.Sprint6.Task4.V6
             this.textBoxStartStepText_TDV = new System.Windows.Forms.TextBox();
             this.chartFunction_TDV = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.panelTop_TDV = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.groupBoxResult_TDV = new System.Windows.Forms.GroupBox();
             this.textBoxResult_TDV = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.splitter1 = new System.Windows.Forms.Splitter();
             this.panelFill_TDV = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.groupBoxTask_TDV.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxData_TDV)).BeginInit();
             this.groupBoxDataInput.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chartFunction_TDV)).BeginInit();
             this.panelTop_TDV.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.groupBoxResult_TDV.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panelFill_TDV.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBoxTask_TDV
@@ -217,6 +217,16 @@ namespace Tyuiu.TretyakovDV.Sprint6.Task4.V6
             this.panelTop_TDV.Size = new System.Drawing.Size(1316, 128);
             this.panelTop_TDV.TabIndex = 5;
             // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.buttonClick_TDV);
+            this.panel2.Controls.Add(this.buttonSave_TDV);
+            this.panel2.Controls.Add(this.button1);
+            this.panel2.Location = new System.Drawing.Point(902, 19);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(411, 100);
+            this.panel2.TabIndex = 17;
+            // 
             // groupBoxResult_TDV
             // 
             this.groupBoxResult_TDV.BackColor = System.Drawing.SystemColors.ActiveCaption;
@@ -267,16 +277,6 @@ namespace Tyuiu.TretyakovDV.Sprint6.Task4.V6
             this.panelFill_TDV.Size = new System.Drawing.Size(1113, 499);
             this.panelFill_TDV.TabIndex = 21;
             // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.buttonClick_TDV);
-            this.panel2.Controls.Add(this.buttonSave_TDV);
-            this.panel2.Controls.Add(this.button1);
-            this.panel2.Location = new System.Drawing.Point(902, 19);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(411, 100);
-            this.panel2.TabIndex = 17;
-            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -296,12 +296,12 @@ namespace Tyuiu.TretyakovDV.Sprint6.Task4.V6
             ((System.ComponentModel.ISupportInitialize)(this.chartFunction_TDV)).EndInit();
             this.panelTop_TDV.ResumeLayout(false);
             this.panelTop_TDV.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.groupBoxResult_TDV.ResumeLayout(false);
             this.groupBoxResult_TDV.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panelFill_TDV.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.ResumeLayout(false);
 
         }
