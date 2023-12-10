@@ -175,19 +175,17 @@ namespace Tyuiu.TretyakovDV.Sprint6.Task7.V29
             this.panelInPut_TDV.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelInPut_TDV.Location = new System.Drawing.Point(0, 167);
             this.panelInPut_TDV.Name = "panelInPut_TDV";
-            this.panelInPut_TDV.Size = new System.Drawing.Size(602, 456);
+            this.panelInPut_TDV.Size = new System.Drawing.Size(633, 456);
             this.panelInPut_TDV.TabIndex = 3;
             // 
             // groupBoxIn_TDV
             // 
-            this.groupBoxIn_TDV.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBoxIn_TDV.AutoSize = true;
             this.groupBoxIn_TDV.Controls.Add(this.dataGridViewIn_TDV);
-            this.groupBoxIn_TDV.Location = new System.Drawing.Point(11, 6);
+            this.groupBoxIn_TDV.Dock = System.Windows.Forms.DockStyle.Left;
+            this.groupBoxIn_TDV.Location = new System.Drawing.Point(0, 0);
             this.groupBoxIn_TDV.Name = "groupBoxIn_TDV";
-            this.groupBoxIn_TDV.Size = new System.Drawing.Size(585, 438);
+            this.groupBoxIn_TDV.Size = new System.Drawing.Size(629, 456);
             this.groupBoxIn_TDV.TabIndex = 1;
             this.groupBoxIn_TDV.TabStop = false;
             this.groupBoxIn_TDV.Text = "Ввод:";
@@ -197,10 +195,11 @@ namespace Tyuiu.TretyakovDV.Sprint6.Task7.V29
             this.dataGridViewIn_TDV.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dataGridViewIn_TDV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewIn_TDV.ColumnHeadersVisible = false;
-            this.dataGridViewIn_TDV.Location = new System.Drawing.Point(10, 26);
+            this.dataGridViewIn_TDV.Dock = System.Windows.Forms.DockStyle.Left;
+            this.dataGridViewIn_TDV.Location = new System.Drawing.Point(3, 16);
             this.dataGridViewIn_TDV.Name = "dataGridViewIn_TDV";
             this.dataGridViewIn_TDV.RowHeadersVisible = false;
-            this.dataGridViewIn_TDV.Size = new System.Drawing.Size(564, 387);
+            this.dataGridViewIn_TDV.Size = new System.Drawing.Size(623, 437);
             this.dataGridViewIn_TDV.TabIndex = 1;
             // 
             // panelOutPut_TDV
@@ -208,21 +207,19 @@ namespace Tyuiu.TretyakovDV.Sprint6.Task7.V29
             this.panelOutPut_TDV.Controls.Add(this.groupBoxOut_TDV);
             this.panelOutPut_TDV.Controls.Add(this.splitter_TDV);
             this.panelOutPut_TDV.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelOutPut_TDV.Location = new System.Drawing.Point(602, 167);
+            this.panelOutPut_TDV.Location = new System.Drawing.Point(633, 167);
             this.panelOutPut_TDV.Name = "panelOutPut_TDV";
-            this.panelOutPut_TDV.Size = new System.Drawing.Size(571, 456);
+            this.panelOutPut_TDV.Size = new System.Drawing.Size(540, 456);
             this.panelOutPut_TDV.TabIndex = 4;
             // 
             // groupBoxOut_TDV
             // 
-            this.groupBoxOut_TDV.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBoxOut_TDV.AutoSize = true;
             this.groupBoxOut_TDV.Controls.Add(this.dataGridViewOut_TDV);
-            this.groupBoxOut_TDV.Location = new System.Drawing.Point(9, 6);
+            this.groupBoxOut_TDV.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBoxOut_TDV.Location = new System.Drawing.Point(3, 0);
             this.groupBoxOut_TDV.Name = "groupBoxOut_TDV";
-            this.groupBoxOut_TDV.Size = new System.Drawing.Size(550, 438);
+            this.groupBoxOut_TDV.Size = new System.Drawing.Size(537, 456);
             this.groupBoxOut_TDV.TabIndex = 2;
             this.groupBoxOut_TDV.TabStop = false;
             this.groupBoxOut_TDV.Text = "Вывод:";
@@ -232,10 +229,11 @@ namespace Tyuiu.TretyakovDV.Sprint6.Task7.V29
             this.dataGridViewOut_TDV.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dataGridViewOut_TDV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewOut_TDV.ColumnHeadersVisible = false;
-            this.dataGridViewOut_TDV.Location = new System.Drawing.Point(6, 20);
+            this.dataGridViewOut_TDV.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridViewOut_TDV.Location = new System.Drawing.Point(3, 16);
             this.dataGridViewOut_TDV.Name = "dataGridViewOut_TDV";
             this.dataGridViewOut_TDV.RowHeadersVisible = false;
-            this.dataGridViewOut_TDV.Size = new System.Drawing.Size(535, 387);
+            this.dataGridViewOut_TDV.Size = new System.Drawing.Size(531, 437);
             this.dataGridViewOut_TDV.TabIndex = 1;
             // 
             // splitter_TDV
@@ -270,6 +268,7 @@ namespace Tyuiu.TretyakovDV.Sprint6.Task7.V29
             this.Controls.Add(this.panelButtons_TDV);
             this.Name = "FormMain";
             this.Text = "Спринт 6 | Таск 7 | Вариант 29 | Третьяков Д. В.";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panelButtons_TDV.ResumeLayout(false);
             this.groupBoxData_TDV.ResumeLayout(false);
             this.groupBoxData_TDV.PerformLayout();
