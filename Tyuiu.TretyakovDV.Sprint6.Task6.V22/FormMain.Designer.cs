@@ -47,6 +47,7 @@ namespace Tyuiu.TretyakovDV.Sprint6.Task6.V22
             this.splitter1 = new System.Windows.Forms.Splitter();
             this.openFileDialogTask_TDV = new System.Windows.Forms.OpenFileDialog();
             this.toolTip_TDV = new System.Windows.Forms.ToolTip(this.components);
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.panelButtons_TDV.SuspendLayout();
             this.panelData_TDV.SuspendLayout();
             this.groupBoxData_TDV.SuspendLayout();
@@ -58,7 +59,7 @@ namespace Tyuiu.TretyakovDV.Sprint6.Task6.V22
             // 
             // panelButtons_TDV
             // 
-            this.panelButtons_TDV.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panelButtons_TDV.BackColor = System.Drawing.SystemColors.Control;
             this.panelButtons_TDV.Controls.Add(this.buttonHelp_TDV);
             this.panelButtons_TDV.Controls.Add(this.buttonOpenFile_TDV);
             this.panelButtons_TDV.Controls.Add(this.buttonDone_TDV);
@@ -112,7 +113,7 @@ namespace Tyuiu.TretyakovDV.Sprint6.Task6.V22
             // 
             // panelData_TDV
             // 
-            this.panelData_TDV.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.panelData_TDV.BackColor = System.Drawing.SystemColors.Control;
             this.panelData_TDV.Controls.Add(this.groupBoxData_TDV);
             this.panelData_TDV.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelData_TDV.Location = new System.Drawing.Point(0, 67);
@@ -138,6 +139,7 @@ namespace Tyuiu.TretyakovDV.Sprint6.Task6.V22
             this.textBoxData_TDV.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxData_TDV.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxData_TDV.Location = new System.Drawing.Point(7, 20);
             this.textBoxData_TDV.Multiline = true;
             this.textBoxData_TDV.Name = "textBoxData_TDV";
@@ -284,6 +286,7 @@ namespace Tyuiu.TretyakovDV.Sprint6.Task6.V22
         private System.Windows.Forms.Button buttonDone_TDV;
         private System.Windows.Forms.ToolTip toolTip_TDV;
         private System.Windows.Forms.OpenFileDialog openFileDialogTask_TDV;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }
 
