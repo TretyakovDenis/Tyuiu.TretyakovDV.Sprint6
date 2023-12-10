@@ -12,9 +12,9 @@ namespace Tyuiu.TretyakovDV.Sprint6.Task5.V15.Test
         public void ValidLoadFromDataFile()
         {
             DataService ds = new DataService();
-            var path = @"C:\DataSprint6\InPutFileTask5V15.txt";
+            var path = @"C:\Users\Денис\source\repos\Tyuiu.TretyakovDV.Sprint6\Tyuiu.TretyakovDV.Sprint6.Task5.V15\bin\Debug\InPutFileTask5V15.txt";
             var res = ds.LoadFromDataFile(path);
-            double[] wait = { -12 };
+            double[] wait = { 3.36, 4.13 };
             CollectionAssert.AreEqual(wait, res);
         }
     }
